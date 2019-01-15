@@ -46,9 +46,9 @@ public class IntArrayWorker
   public int getLargest()
   {
     int maximum = 0;
-    for (int i = 0; i < matrix[i].length; i++)
+    for (int i = 0; i <= matrix[i].length; i++)
     {
-      for (int j = 0; j < matrix [j].length; i++)
+      for (int j = 0; j <= matrix [j].length; i++)
       if (matrix[i][j] > maximum)
       {
         maximum = matrix[i][j];
@@ -60,10 +60,15 @@ public class IntArrayWorker
 
   public int getColTotal()
   {
-    for (int i = 0; i < matrix.length; i++)
+    int coltotal;
+    for (int i = 0; i <= matrix[i].length; i++)
     {
-      IntArrayWorkerTester.testGetColTotal();
-    }
+      for (int j = 0; j <= matrix [j].length; i++)
+      {
+        coltotal = coltotal + matrix[j];
+        return coltotal;
+
+      }
   }
   /**
    * Method to return the total using a nested for-each loop
