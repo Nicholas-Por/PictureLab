@@ -4,7 +4,7 @@ import javax.swing.ImageIcon;
 import java.awt.*;
 import java.io.*;
 import java.awt.geom.*;
-
+//pahmed5783
 /**
  * A class that represents a simple picture.  A simple picture may have
  * an associated file name and a title.  A simple picture has pixels, 
