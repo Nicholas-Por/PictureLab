@@ -111,6 +111,8 @@ public class Picture extends SimplePicture
     }
   }
 
+
+
   public void negate()
   {
     Pixel[][] pixels = this.getPixels2D();
@@ -125,7 +127,7 @@ public class Picture extends SimplePicture
     }
   }
 
-  public void greyscale()
+  public void Greyscale()
   {
       Pixel[][] pixels = this.getPixels2D();
       for (Pixel[] rowArray : pixels)
@@ -140,6 +142,8 @@ public class Picture extends SimplePicture
           }
       }
   }
+
+
 public void fixUnderwater()
 {
   Pixel[][] pixels = this.getPixels2D();
@@ -279,7 +283,7 @@ public void fixUnderwater()
   {
     Picture beach = new Picture("water.jpg");
     beach.explore();
-    beach.keepOnlyBlue();
+    beach.fixUnderwater();
     beach.explore();
   }
   
